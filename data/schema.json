@@ -1,0 +1,18 @@
+{
+    "Identifier": "string",
+    "ClientName": "string",
+    "TO": "string",
+    "CAD": "string",
+    "JobNumber": "string",
+    "CRM": "string",
+    "TestFee": "number",
+    "BookingStatus": "string",
+    "PF": "string",
+    "Duration": "string",
+    "Description": "string",
+    "TestStartTime": "string",
+    "Cell": "string",
+    "TestDate": "date",
+    "DateAdded": "date",
+    "LastModified": "datetime"
+}

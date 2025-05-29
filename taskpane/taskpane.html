@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Beta Excel Add-in: Calendar-based data entry form" />
+    <title>Calendar Form</title>
+    <link rel="stylesheet" href="../taskpane/taskpane.css" />
+</head>
+
+<body>
+    <div id="loadingOverlay" class="hidden">Loading...</div>
+
+    <form id="entryForm">
+        <h2>Calendar Entry Form</h2>
+        <div class="form-grid">
+            <label for="ClientName">Client Name</label>
+            <input type="text" id="ClientName" />
+
+            <label for="TO">TO</label>
+            <input type="text" id="TO" />
+
+            <label for="CAD">CAD</label>
+            <input type="text" id="CAD" />
+
+            <label for="JobNumber">Job Number</label>
+            <input type="text" id="JobNumber" />
+
+            <label for="CRM">CRM</label>
+            <input type="text" id="CRM" />
+
+            <label for="TestFee">Test Fee</label>
+            <input type="number" id="TestFee" />
+
+            <label for="BookingStatus">Booking Status</label>
+            <select id="BookingStatus">
+                <option value="">-- Select --</option>
+                <option value="Confirmed">Confirmed</option>
+                <option value="Provisional">Provisional</option>
+            </select>
+
+            <label for="PF">PF?</label>
+            <select id="PF">
+                <option value="">-- Select --</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="Duration">Duration</label>
+            <input type="text" id="Duration" />
+
+            <label for="Description">Description</label>
+            <input type="text" id="Description" />
+
+            <label for="TestStartTime">Test Start Time</label>
+            <input type="text" id="TestStartTime" />
+
+            <label for="Cell">Cell</label>
+            <input type="text" id="Cell" />
+
+            <label for="TestDate">Test Date</label>
+            <input type="date" id="TestDate" />
+
+            <label for="DateAdded">Date Added</label>
+            <input type="date" id="DateAdded" />
+        </div>
+
+        <div class="form-buttons">
+            <button type="button" id="submitBtn">Submit</button>
+            <button type="button" id="cancelBtn">Cancel Test</button>
+        </div>
+    </form>
+
+    <div id="modalConfirm" class="modal hidden">
+        <div class="modal-content">
+            <p id="modalMessage">Are you sure?</p>
+            <button id="modalYes">Yes</button>
+            <button id="modalNo">No</button>
+        </div>
+    </div>
+
+    <script type="module" src="../taskpane/taskpane.js"></script>
+</body>
+
+</html>
